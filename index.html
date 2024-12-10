@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon $1,000 Gift Card Offer</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #ffcc00, #000);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Top 3-line button */
+    .menu-btn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 24px;
+    }
+
+    /* Title and Subtitle */
+    .title {
+      font-size: 3rem;
+      margin-top: 50px;
+      animation: bounce 2s infinite;
+      color: #ffe600;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+      color: #fff;
+      text-shadow: 1px 1px 3px #ff9900;
+    }
+
+    /* Background Image */
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 15px;
+      animation: bounce 3s infinite, pulse 2s infinite;
+    }
+
+    /* Email Form */
+    .form-container {
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 20px #ffcc00;
+    }
+
+    .form-container input[type="email"] {
+      width: 85%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 2px solid #ffcc00;
+      border-radius: 25px;
+      font-size: 1rem;
+      color: black;
+      animation: glow 2s infinite;
+      text-align: center;
+    }
+
+    .form-container button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(45deg, #ff6600, #ffcc00);
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      animation: glow 2s infinite;
+      text-shadow: 1px 1px 5px black;
+    }
+
+    .form-container button:hover {
+      background: linear-gradient(45deg, #ffcc00, #ff6600);
+      box-shadow: 0 0 15px yellow;
+    }
+
+    .form-container p {
+      font-size: 0.9rem;
+      color: #ffcc00;
+    }
+
+    /* Countdown Timer */
+    .countdown {
+      margin: 20px auto;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    /* Offer Instructions */
+    .steps {
+      margin: 20px auto;
+      text-align: left;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      max-width: 400px;
+      box-shadow: 0 0 20px yellow;
+    }
+
+    .steps h3 {
+      margin: 15px 0;
+      color: #ffcc00;
+      animation: bounce 2s infinite;
+    }
+
+    .steps p {
+      color: white;
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 3px #ff9900;
+      animation: pulse 2s infinite;
+    }
+
+    /* Pop-up Notification */
+    .popup {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      padding: 15px;
+      background: rgba(0, 255, 0, 0.8);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: white;
+      box-shadow: 0 0 10px green;
+      display: none;
+    }
+
+    /* Keyframes */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-15px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        box-shadow: 0 0 10px yellow;
+      }
+      50% {
+        box-shadow: 0 0 20px orange;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Menu Button -->
+  <button class="menu-btn" onclick="window.location.href='https://go4affm.com/c/?p=40201&o=20854&subid=1234';">
+    ☰
+  </button>
+
+  <!-- Title and Subtitle -->
+  <h1 class="title">Win a $1,000 Amazon Gift Card!</h1>
+  <p class="subtitle">Submit your email to claim your prize and start shopping!</p>
+
+  <!-- Image Section -->
+  <div class="image-container">
+    <img src="https://i.ibb.co/RDD1fZd/02810809b3b8.jpg" alt="Gift Card Image">
+  </div>
+
+  <!-- Email Form -->
+  <div class="form-container">
+    <input type="email" id="email" placeholder="Enter your email" />
+    <button id="claimBtn">Claim Now</button>
+    <p>Your information is secure and will not be shared.</p>
+  </div>
+
+  <!-- Countdown Timer -->
+  <div class="countdown">Offer ends in: <span id="timer">00:00:00</span></div>
+
+  <!-- Offer Instructions -->
+  <div class="steps">
+    <h3>Steps to Claim Your Prize:</h3>
+    <p>1. Submit your email.</p>
+    <p>2. Claim your prize.</p>
+    <p>3. Start shopping!</p>
+  </div>
+
+  <!-- Popup Notification -->
+  <div class="popup" id="popup">John from California just won a $1,000 gift card!</div>
+
+  <script>
+    // Countdown Timer
+    const timerEl = document.getElementById('timer');
+    let timeLeft = 600; // 10 minutes in seconds
+    const timerInterval = setInterval(() => {
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        timerEl.textContent = "00:00:00";
+      } else {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerEl.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        timeLeft--;
+      }
+    }, 1000);
+
+    // Form Handling
+    document.getElementById('claimBtn').addEventListener('click', () => {
+      const email = document.getElementById('email').value;
+      if (email.trim() === '') {
+        alert('Please enter a valid email!');
+      } else {
+        const affiliateUrl = 'https://go4affm.com/c/?p=40201&o=20854&subid=1234';
+        window.location.href = `${affiliateUrl}`;
+      }
+    });
+
+    // Popup Notification
+    const popup = document.getElementById('popup');
+    setTimeout(() => {
+      popup.style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
